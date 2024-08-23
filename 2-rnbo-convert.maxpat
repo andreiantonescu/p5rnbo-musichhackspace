@@ -117,26 +117,26 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 585.826802730560303, 335.433088660240173, 203.0, 23.0 ],
+									"patching_rect" : [ 585.826802730560303, 335.433088660240173, 210.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
 										"enum" : "",
+										"displayname" : "",
+										"preset" : 1,
+										"exponent" : 1.0,
+										"value" : 0.0,
+										"unit" : "",
+										"sendinit" : 1,
+										"displayorder" : "-",
+										"order" : "0",
+										"ctlin" : 0.0,
 										"tonormalized" : "",
 										"steps" : 0.0,
-										"fromnormalized" : "",
-										"preset" : 1,
-										"unit" : "",
-										"displayname" : "",
-										"displayorder" : "-",
-										"value" : 0.0,
-										"order" : "0",
 										"meta" : "",
-										"sendinit" : 1,
-										"ctlin" : 0.0,
-										"exponent" : 1.0
+										"fromnormalized" : ""
 									}
 ,
-									"rnbo_serial" : 5,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "gain",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -524,7 +524,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "param @name gain @min 0 @max 99",
+									"text" : "param @name gain @min 0 @max 100",
 									"varname" : "gain"
 								}
 
@@ -540,22 +540,22 @@
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
 										"enum" : "",
+										"displayname" : "",
+										"preset" : 1,
+										"exponent" : 1.0,
+										"value" : 0.0,
+										"unit" : "",
+										"sendinit" : 1,
+										"displayorder" : "-",
+										"order" : "0",
+										"ctlin" : 0.0,
 										"tonormalized" : "",
 										"steps" : 0.0,
-										"fromnormalized" : "",
-										"preset" : 1,
-										"unit" : "",
-										"displayname" : "",
-										"displayorder" : "-",
-										"value" : 0.0,
-										"order" : "0",
 										"meta" : "",
-										"sendinit" : 1,
-										"ctlin" : 0.0,
-										"exponent" : 1.0
+										"fromnormalized" : ""
 									}
 ,
-									"rnbo_serial" : 3,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "freqTwo",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -943,7 +943,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "param @name freqTwo @min 0 @max 2000",
+									"text" : "param @name freqTwo @min 0 @max 5000",
 									"varname" : "freqTwo"
 								}
 
@@ -959,22 +959,22 @@
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
 										"enum" : "",
+										"displayname" : "",
+										"preset" : 1,
+										"exponent" : 1.0,
+										"value" : 0.0,
+										"unit" : "",
+										"sendinit" : 1,
+										"displayorder" : "-",
+										"order" : "0",
+										"ctlin" : 0.0,
 										"tonormalized" : "",
 										"steps" : 0.0,
-										"fromnormalized" : "",
-										"preset" : 1,
-										"unit" : "",
-										"displayname" : "",
-										"displayorder" : "-",
-										"value" : 0.0,
-										"order" : "0",
 										"meta" : "",
-										"sendinit" : 1,
-										"ctlin" : 0.0,
-										"exponent" : 1.0
+										"fromnormalized" : ""
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "freqOne",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -1362,7 +1362,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "param @name freqOne @min 0 @max 2000",
+									"text" : "param @name freqOne @min 0 @max 5000",
 									"varname" : "freqOne"
 								}
 
@@ -1380,7 +1380,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "out~_obj-6",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -1477,8 +1477,8 @@
 									"patching_rect" : [ 459.842544078826904, 375.590571105480194, 22.0, 140.0 ],
 									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
-										"inc" : 1.072,
 										"size" : 158.0,
+										"inc" : 1.072,
 										"scale" : 7.943,
 										"preset" : 0,
 										"order" : ""
@@ -1505,11 +1505,11 @@
 										"maximum" : "<none>",
 										"minimum" : "<none>",
 										"preset" : 0,
-										"initialFormat" : "float",
-										"order" : ""
+										"order" : "",
+										"initialFormat" : "float"
 									}
 ,
-									"rnbo_serial" : 5,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "number_obj-28"
 								}
 
@@ -1527,7 +1527,7 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 9,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "*_obj-27",
 									"text" : "* 5"
 								}
@@ -1546,7 +1546,7 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 10,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "*_obj-26",
 									"text" : "* 4"
 								}
@@ -1565,7 +1565,7 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 11,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "*_obj-25",
 									"text" : "* 3"
 								}
@@ -1584,7 +1584,7 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 12,
+									"rnbo_serial" : 4,
 									"rnbo_uniqueid" : "*_obj-24",
 									"text" : "* 2"
 								}
@@ -1599,7 +1599,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 459.842544078826904, 314.173245012760162, 31.0, 23.0 ],
 									"rnbo_classname" : "/~",
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "/~_obj-23",
 									"text" : "/~ 5"
 								}
@@ -1620,7 +1620,7 @@
 										"interp" : "linear"
 									}
 ,
-									"rnbo_serial" : 11,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "cycle~_obj-22",
 									"text" : "cycle~"
 								}
@@ -1641,7 +1641,7 @@
 										"interp" : "linear"
 									}
 ,
-									"rnbo_serial" : 12,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "cycle~_obj-21",
 									"text" : "cycle~"
 								}
@@ -1662,7 +1662,7 @@
 										"interp" : "linear"
 									}
 ,
-									"rnbo_serial" : 13,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "cycle~_obj-20",
 									"text" : "cycle~"
 								}
@@ -1683,7 +1683,7 @@
 										"interp" : "linear"
 									}
 ,
-									"rnbo_serial" : 14,
+									"rnbo_serial" : 4,
 									"rnbo_uniqueid" : "cycle~_obj-19",
 									"text" : "cycle~"
 								}
@@ -1703,11 +1703,11 @@
 										"maximum" : "<none>",
 										"minimum" : "<none>",
 										"preset" : 0,
-										"initialFormat" : "float",
-										"order" : ""
+										"order" : "",
+										"initialFormat" : "float"
 									}
 ,
-									"rnbo_serial" : 6,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "number_obj-9"
 								}
 
@@ -1727,7 +1727,7 @@
 										"interp" : "linear"
 									}
 ,
-									"rnbo_serial" : 15,
+									"rnbo_serial" : 5,
 									"rnbo_uniqueid" : "cycle~_obj-1",
 									"text" : "cycle~"
 								}
@@ -1882,14 +1882,14 @@
 ,
 					"patching_rect" : [ 538.0, 295.0, 143.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"freqOne" : 						{
-							"label" : "freqOne",
+						"freqTwo" : 						{
+							"label" : "freqTwo",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"freqTwo" : 						{
-							"label" : "freqTwo",
+						"freqOne" : 						{
+							"label" : "freqOne",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1931,7 +1931,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"freqTwo" : 							{
-								"value" : 421.0
+								"value" : 2136.0
 							}
 ,
 							"gain" : 							{
@@ -1939,7 +1939,7 @@
 							}
 ,
 							"freqOne" : 							{
-								"value" : 547.0
+								"value" : 2697.0
 							}
 ,
 							"__presetid" : "firstExample"
@@ -1958,7 +1958,7 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"freqTwo" : 										{
-											"value" : 421.0
+											"value" : 2136.0
 										}
 ,
 										"gain" : 										{
@@ -1966,7 +1966,7 @@
 										}
 ,
 										"freqOne" : 										{
-											"value" : 547.0
+											"value" : 2697.0
 										}
 ,
 										"__presetid" : "firstExample"
