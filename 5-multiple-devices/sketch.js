@@ -5,11 +5,17 @@ async function setupRNBO() {
     context = new audioContext()
 
     // load RNBO patch - it's called a "device"
-    let response = await fetch("export/firstExample.export.json")
+    let response = await fetch("export/firstDevice/firstExample.export.json")
     const myPatcher = await response.json()
     const myDevice = await RNBO.createDevice({ context, patcher: myPatcher })
     
-    myDevice.node.connect(context.destination)
+    // load 2nd RNBO patch
+    let responseTwo = await fetch("export/shimmeRev/rnbo.shimmerev.json")
+    const my2ndPatcher = await responseTwo.json()
+    const my2ndDevice = await RNBO.createDevice({ context, patcher: my2ndPatcher })
+
+    myDevice.node.connect(my2ndDevice.node)
+    my2ndDevice.node.connect(context.destination)
 
     // get parameters
     freqOne = myDevice.parametersById.get("freqOne")
