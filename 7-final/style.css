@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.startButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
