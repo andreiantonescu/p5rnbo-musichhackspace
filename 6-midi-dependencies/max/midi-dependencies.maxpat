@@ -112,7 +112,7 @@
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
+					"numoutlets" : 3,
 					"outletInfo" : 					{
 						"IOInfo" : [ 							{
 								"type" : "signal",
@@ -120,10 +120,16 @@
 								"tag" : "out1",
 								"comment" : ""
 							}
+, 							{
+								"type" : "midi",
+								"index" : -1,
+								"tag" : "",
+								"comment" : ""
+							}
  ]
 					}
 ,
-					"outlettype" : [ "signal", "list" ],
+					"outlettype" : [ "signal", "int", "list" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -135,7 +141,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 34.0, 100.0, 984.0, 787.0 ],
+						"rect" : [ 786.0, 241.0, 678.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -173,7 +179,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 308.0, 337.0, 31.0, 23.0 ],
 									"rnbo_classname" : "*~",
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "*~_obj-79",
 									"text" : "*~ 5"
 								}
@@ -207,9 +213,9 @@
 									"rnbo_extra_attributes" : 									{
 										"maximum" : "<none>",
 										"minimum" : "<none>",
-										"order" : "",
 										"preset" : 0,
-										"initialFormat" : "float"
+										"initialFormat" : "float",
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -249,9 +255,9 @@
 									"rnbo_extra_attributes" : 									{
 										"maximum" : "<none>",
 										"minimum" : "<none>",
-										"order" : "",
 										"preset" : 0,
-										"initialFormat" : "float"
+										"initialFormat" : "float",
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 2,
@@ -287,9 +293,9 @@
 									"rnbo_extra_attributes" : 									{
 										"maximum" : "<none>",
 										"minimum" : "<none>",
-										"order" : "",
 										"preset" : 0,
-										"initialFormat" : "float"
+										"initialFormat" : "float",
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 3,
@@ -727,9 +733,9 @@
 									"patching_rect" : [ 580.0, 144.0, 296.0, 23.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
+										"type" : "",
 										"fill" : "",
-										"samplerate" : 0.0,
-										"type" : ""
+										"samplerate" : 0.0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1027,20 +1033,20 @@
 									"patching_rect" : [ 706.0, 442.0, 210.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"displayorder" : "-",
 										"enum" : "",
-										"unit" : "",
-										"exponent" : 1.0,
-										"order" : "0",
-										"tonormalized" : "",
 										"preset" : 1,
-										"displayname" : "",
+										"steps" : 0.0,
 										"value" : 0.0,
+										"tonormalized" : "",
 										"ctlin" : 0.0,
 										"fromnormalized" : "",
-										"steps" : 0.0,
+										"displayorder" : "-",
+										"meta" : "",
+										"displayname" : "",
 										"sendinit" : 1,
-										"meta" : ""
+										"exponent" : 1.0,
+										"unit" : "",
+										"order" : "0"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1446,20 +1452,20 @@
 									"patching_rect" : [ 837.0, 199.0, 237.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"displayorder" : "-",
 										"enum" : "",
-										"unit" : "",
-										"exponent" : 1.0,
-										"order" : "0",
-										"tonormalized" : "",
 										"preset" : 1,
-										"displayname" : "",
+										"steps" : 0.0,
 										"value" : 0.0,
+										"tonormalized" : "",
 										"ctlin" : 0.0,
 										"fromnormalized" : "",
-										"steps" : 0.0,
+										"displayorder" : "-",
+										"meta" : "",
+										"displayname" : "",
 										"sendinit" : 1,
-										"meta" : ""
+										"exponent" : 1.0,
+										"unit" : "",
+										"order" : "0"
 									}
 ,
 									"rnbo_serial" : 2,
@@ -1865,20 +1871,20 @@
 									"patching_rect" : [ 580.0, 199.0, 239.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"displayorder" : "-",
 										"enum" : "",
-										"unit" : "",
-										"exponent" : 1.0,
-										"order" : "0",
-										"tonormalized" : "",
 										"preset" : 1,
-										"displayname" : "",
+										"steps" : 0.0,
 										"value" : 0.0,
+										"tonormalized" : "",
 										"ctlin" : 0.0,
 										"fromnormalized" : "",
-										"steps" : 0.0,
+										"displayorder" : "-",
+										"meta" : "",
+										"displayname" : "",
 										"sendinit" : 1,
-										"meta" : ""
+										"exponent" : 1.0,
+										"unit" : "",
+										"order" : "0"
 									}
 ,
 									"rnbo_serial" : 3,
@@ -2384,11 +2390,11 @@
 									"patching_rect" : [ 580.0, 483.0, 22.0, 140.0 ],
 									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
-										"scale" : 7.943,
 										"inc" : 1.072,
 										"size" : 158.0,
-										"order" : "",
-										"preset" : 0
+										"scale" : 7.943,
+										"preset" : 0,
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -2411,9 +2417,9 @@
 									"rnbo_extra_attributes" : 									{
 										"maximum" : "<none>",
 										"minimum" : "<none>",
-										"order" : "",
 										"preset" : 0,
-										"initialFormat" : "float"
+										"initialFormat" : "float",
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 4,
@@ -2609,9 +2615,9 @@
 									"rnbo_extra_attributes" : 									{
 										"maximum" : "<none>",
 										"minimum" : "<none>",
-										"order" : "",
 										"preset" : 0,
-										"initialFormat" : "float"
+										"initialFormat" : "float",
+										"order" : ""
 									}
 ,
 									"rnbo_serial" : 5,
@@ -2867,7 +2873,7 @@
 
 					}
 ,
-					"patching_rect" : [ 538.0, 464.0, 143.0, 22.0 ],
+					"patching_rect" : [ 538.0, 464.0, 230.0, 22.0 ],
 					"rnboattrcache" : 					{
 						"freqTwo" : 						{
 							"label" : "freqTwo",
@@ -2904,6 +2910,7 @@
 					"saved_object_attributes" : 					{
 						"optimization" : "O1",
 						"parameter_enable" : 1,
+						"polyphony" : 16,
 						"uuid" : "e23eac87-60d7-11ef-ac87-0a2368c31277"
 					}
 ,
@@ -2917,16 +2924,68 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
+							"__sps" : 							{
+								"poly" : [ 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+, 									{
+
+									}
+ ]
+							}
+,
 							"freqTwo" : 							{
-								"value" : 2136.0
+								"value" : 0.0
 							}
 ,
 							"gain" : 							{
-								"value" : 90.0
+								"value" : 29.700000000000003
 							}
 ,
 							"freqOne" : 							{
-								"value" : 2697.0
+								"value" : 0.0
 							}
 ,
 							"__presetid" : "firstExample"
@@ -2944,16 +3003,68 @@
 									"subtype" : "",
 									"embed" : 0,
 									"snapshot" : 									{
+										"__sps" : 										{
+											"poly" : [ 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+, 												{
+
+												}
+ ]
+										}
+,
 										"freqTwo" : 										{
-											"value" : 2136.0
+											"value" : 0.0
 										}
 ,
 										"gain" : 										{
-											"value" : 90.0
+											"value" : 29.700000000000003
 										}
 ,
 										"freqOne" : 										{
-											"value" : 2697.0
+											"value" : 0.0
 										}
 ,
 										"__presetid" : "firstExample"
@@ -2973,7 +3084,7 @@
 
 					}
 ,
-					"text" : "rnbo~ @title firstExample",
+					"text" : "rnbo~ @title firstExample @polyphony 16",
 					"varname" : "rnbo~"
 				}
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 446.0, 130.0, 690.0, 650.0 ],
+		"rect" : [ 339.0, 100.0, 690.0, 650.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 517.333348751068115, 336.000010013580322, 102.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "rnbo.shimmerev~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"autosave" : 1,
 					"id" : "obj-12",
@@ -1803,11 +1820,11 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"gain" : 							{
-								"value" : 85.0
+								"value" : 84.0
 							}
 ,
 							"freqTwo" : 							{
-								"value" : 500.0
+								"value" : 388.0
 							}
 ,
 							"freqOne" : 							{
@@ -1830,11 +1847,11 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"gain" : 										{
-											"value" : 85.0
+											"value" : 84.0
 										}
 ,
 										"freqTwo" : 										{
-											"value" : 500.0
+											"value" : 388.0
 										}
 ,
 										"freqOne" : 										{
@@ -1915,7 +1932,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
+					"destination" : [ "obj-16", 1 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -1923,7 +1940,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -1950,6 +1967,22 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-12" : [ "rnbo~", "rnbo~", 0 ],
@@ -1966,6 +1999,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "rnbo.shimmerev~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "workshop.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Max 8/Snapshots",
