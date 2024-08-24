@@ -1,5 +1,5 @@
 let newColor
-let context, freqOne, freqTwo, gain
+let context, freqOne, freqTwo, gain, reverbSize
 
 async function setupRNBO() {
     const audioContext = window.AudioContext || window.webkitAudioContext
@@ -9,8 +9,14 @@ async function setupRNBO() {
     let response = await fetch("export/workshop.export.json")
     const myPatcher = await response.json()
     const myDevice = await RNBO.createDevice({ context, patcher: myPatcher })
+
+    let responseEffect = await fetch("export-effect/rnbo.shimmerev.json")
+    const myPatcherEffect = await responseEffect.json()
+    const myDeviceEffect = await RNBO.createDevice({ context, patcher: myPatcherEffect })
     
-    myDevice.node.connect(context.destination)
+    // First Device -> Reverb -> Output
+    myDevice.node.connect(myDeviceEffect.node)
+    myDeviceEffect.node.connect(context.destination)
 
     // get parameters
     freqOne = myDevice.parametersById.get("freqOne")
@@ -21,6 +27,9 @@ async function setupRNBO() {
 
     gain = myDevice.parametersById.get("gain")
     gain.value = 85.0
+
+    reverbSize = myDeviceEffect.parametersById.get("size")
+    reverbSize.value = 50.0
 
     context.suspend()
 }
@@ -50,6 +59,8 @@ function mouseMoved() {
 
     freqOne.value = map(mouseX, 0, windowWidth, 0, 5000)
     freqTwo.value = map(mouseY, 0, windowHeight, 5000, 0) 
+
+    reverbSize.value = map(mouseX, 0, windowWidth, 0, 100) 
 
 }
 

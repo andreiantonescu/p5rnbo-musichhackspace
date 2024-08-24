@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 76.0, 139.0, 991.0, 650.0 ],
+		"rect" : [ 446.0, 130.0, 690.0, 650.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -71,7 +71,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 154.0, 121.0, 900.0, 614.0 ],
+						"rect" : [ 961.0, 152.0, 521.0, 643.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1803,15 +1803,15 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"gain" : 							{
-								"value" : 0.0
+								"value" : 85.0
 							}
 ,
 							"freqTwo" : 							{
-								"value" : 0.0
+								"value" : 500.0
 							}
 ,
 							"freqOne" : 							{
-								"value" : 0.0
+								"value" : 350.0
 							}
 ,
 							"__presetid" : "workshop"
@@ -1830,15 +1830,15 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"gain" : 										{
-											"value" : 0.0
+											"value" : 85.0
 										}
 ,
 										"freqTwo" : 										{
-											"value" : 0.0
+											"value" : 500.0
 										}
 ,
 										"freqOne" : 										{
-											"value" : 0.0
+											"value" : 350.0
 										}
 ,
 										"__presetid" : "workshop"
@@ -1908,7 +1908,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 432.624122500419617, 226.950359344482422, 150.0, 22.0 ]
+					"patching_rect" : [ 428.43139910697937, 242.156877756118774, 150.0, 22.0 ]
 				}
 
 			}
